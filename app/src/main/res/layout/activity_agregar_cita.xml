@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/form_cita"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/res_rectangulo"
+        android:padding="16dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center_vertical"
+        android:elevation="6dp">
+
+        <ImageButton
+            android:id="@+id/btnAtrasFormCalendar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_flecha_izquierda"
+            android:layout_gravity="center_vertical"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pets Quotes"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/formulario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Spinner para seleccionar la mascota -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selecciona la mascota"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/spinnerMascota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_spinner_background"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"
+                android:dropDownVerticalOffset="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Spinner para seleccionar el servicio -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selecciona el Servicio"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/spinnerServicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_spinner_background"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"
+                android:dropDownVerticalOffset="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Spinner para seleccionar el horario -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selecciona el Horario"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/spinnerHorario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_spinner_background"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"
+                android:dropDownVerticalOffset="12dp"/>
+
+        </LinearLayout>
+
+        <!-- Campo de costo_cita -->
+        <TextView
+            android:id="@+id/tvCostoCita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Costo: $0.00"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp" />
+
+        <!-- Campos adicionales -->
+        <EditText
+            android:id="@+id/etRazon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/res_rectangulo_bordeado_inicio_2"
+            android:backgroundTint="@color/fon_mascotas"
+            android:hint="Razón"
+            android:elevation="5dp"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"/>
+
+        <EditText
+            android:id="@+id/etObservaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/res_rectangulo_bordeado_inicio_2"
+            android:backgroundTint="@color/fon_mascotas"
+            android:hint="Observaciones"
+            android:elevation="5dp"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"/>
+
+        <EditText
+            android:id="@+id/etFechaCita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/res_rectangulo_bordeado_inicio_2"
+            android:backgroundTint="@color/fon_mascotas"
+            android:hint="Fecha (YYYY-MM-DD)"
+            android:focusable="false"
+            android:clickable="true"
+            android:inputType="date"
+            android:elevation="5dp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:textSize="12sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"/>
+
+        <!-- Botón para guardar -->
+        <Button
+            android:id="@+id/btnGuardarCita"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primario_600"
+            android:padding="12dp"
+            android:layout_gravity="center"
+            android:text="Guardar Cita"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

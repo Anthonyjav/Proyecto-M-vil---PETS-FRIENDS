@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PetsFriends</string>
+    <string name="title_home">Home</string>
+    <string name="title_store">Tienda</string>
+    <string name="title_add">Añadir</string>
+    <string name="title_cita">Cita</string>
+    <string name="title_account">Perfil</string>
+    <string name="comprar">COMPRAR</string>
+    <string name="agregar_cita">Agregar cita</string>
+    <string name="continuar">Continuar</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="product_image">Producto error</string>
+    <string name="vetcita">Agenda una cita para tu mascota ¡YA!</string>
+    <string name="vetmascotas">Añade un registro de tus mascotas</string>
+</resources>

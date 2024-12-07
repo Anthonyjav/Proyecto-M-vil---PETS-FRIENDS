@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="@drawable/res_rectangulo_bordeado_inicio_2"
+    android:elevation="6dp"
+    android:layout_margin="3dp">
+
+    <ImageView
+        android:id="@+id/imagenProductoCarrito"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:background="@drawable/comida"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/precioProductoCarrito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SOL 7850.00"
+            android:textColor="@color/primario"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/nombreProductoCarrito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Royal Canin Rottweiler Puppy"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/cantidadProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3kg"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/botonAumentar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_mas" /> <!-- Cambia ic_plus por tu icono -->
+        <!-- Nuevo TextView para mostrar cantidadEnCarrito -->
+        <TextView
+            android:id="@+id/cantidadEnCarrito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+        <ImageButton
+            android:id="@+id/botonDisminuir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_menos" /> <!-- Cambia ic_minus por tu icono -->
+    </LinearLayout>
+</LinearLayout>

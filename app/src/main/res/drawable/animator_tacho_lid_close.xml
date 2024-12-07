@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/animator_tacho_lid_close.xml -->
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_tacho">
+    <target
+        android:name="lid"
+        android:animation="@animator/lid_close_anim" />
+</animated-vector>
